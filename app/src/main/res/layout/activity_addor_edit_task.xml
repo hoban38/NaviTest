@@ -1,0 +1,410 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    tools:context="calendar.yeon.com.project2.Task.AddorEditTask">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="#ff355689">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/icon_desc"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabHost">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                //Event
+                <LinearLayout
+                    android:id="@+id/EventTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/EventText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="edit"
+                        android:textAppearance="?android:attr/textAppearanceLarge" >
+                    </TextView>
+                    //일정이름
+                    <LinearLayout
+                        android:id="@+id/EventlinearLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/EventTitleView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="title"
+                            android:textAppearance="?android:attr/textAppearanceMedium" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/EventTitleEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/eventtitlehint" >
+                        </EditText>
+                    </LinearLayout>
+                    //일정내용
+                    <LinearLayout
+                        android:id="@+id/EventlinearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/EventNoteView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="note"
+                            android:textAppearance="?android:attr/textAppearanceMedium" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/EventNoteEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/eventnotehint" >
+                        </EditText>
+                    </LinearLayout>
+                    //일정장소
+                    <LinearLayout
+                        android:id="@+id/EventlinearLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/EventLocationView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Location"
+                            android:textAppearance="?android:attr/textAppearanceMedium" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/EventLocationEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Location" >
+                        </EditText>
+                    </LinearLayout>
+                    //일정시작시간
+                    <LinearLayout
+                        android:id="@+id/EventlinearLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/EventstartView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/start"
+                            android:textAppearance="?android:attr/textAppearanceMedium" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/EventstartdayEdit"
+                            android:layout_width="5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onClickstart"
+                            android:clickable="true"
+                             ></TextView>
+                        <TextView
+                            android:id="@+id/EventstarttimeEdit"
+                            android:layout_width="5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onClickstart"
+                            android:clickable="true"
+                            >
+                        </TextView>
+                    </LinearLayout>
+                    //일정끝시간
+                    <LinearLayout
+                        android:id="@+id/EventlinearLayout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/EventEndView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/end"
+                            android:textAppearance="?android:attr/textAppearanceMedium" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/EventEnddayEdit"
+                            android:layout_width="5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onClickend"
+                            android:clickable="true"
+                             >
+                        </TextView>
+                        <TextView
+                            android:id="@+id/EventEndtimeEdit"
+                            android:layout_width="5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onClickend"
+                            android:clickable="true"
+                            >
+                        </TextView>
+                    </LinearLayout>
+                    //일정TimeZone
+                    <LinearLayout
+                        android:id="@+id/EventlinearLayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/EventTimeZoneEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/eventnotehint" >
+                        </EditText>
+                    </LinearLayout>
+                    //일정참석자
+                    <LinearLayout
+                        android:id="@+id/EventlinearLayout7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/EventAttendeesView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/attandees"
+                            android:textAppearance="?android:attr/textAppearanceMedium" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/EventAttendeesEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/attandees" >
+                        </EditText>
+                    </LinearLayout>
+                    //일정반복
+                    <LinearLayout
+                        android:id="@+id/EventlinearLayout8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/EventrotateView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="note"
+                            android:textAppearance="?android:attr/textAppearanceMedium" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/EventrotateEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/eventnotehint" >
+                        </EditText>
+                    </LinearLayout>
+                    //일정알람
+                    <LinearLayout
+                        android:id="@+id/EventlinearLayout9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/EventalarmView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="note"
+                            android:textAppearance="?android:attr/textAppearanceMedium" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/EventalarmEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/eventnotehint" >
+                        </EditText>
+                    </LinearLayout>
+                    //캘린더 공개여부
+                    <LinearLayout
+                        android:id="@+id/EventlinearLayout10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/EventshareView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="note"
+                            android:textAppearance="?android:attr/textAppearanceMedium" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/EventshareEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/eventnotehint" >
+                        </EditText>
+                    </LinearLayout>
+                    //버튼
+                    <LinearLayout
+                        android:id="@+id/EventlinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <Button
+                            android:id="@+id/cancelButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onCancel"
+                            android:text="cancel" />
+
+                        <Button
+                            android:id="@+id/saveButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onSaveEvent"
+                            android:text="save" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                //Task
+                <LinearLayout
+                    android:id="@+id/TaskTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/TaskText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="edit"
+                        android:textAppearance="?android:attr/textAppearanceLarge" >
+                    </TextView>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/TaskTitleView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="title"
+                            android:textAppearance="?android:attr/textAppearanceMedium" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/TaskTitleEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="title_hint" >
+                        </EditText>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/TaskNoteView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="note"
+                            android:textAppearance="?android:attr/textAppearanceMedium" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/TaskNoteEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="note_hint" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <Button
+                            android:id="@+id/cancelButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onCancel"
+                            android:text="cancel" />
+
+                        <Button
+                            android:id="@+id/saveButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onSaveTask"
+                            android:text="save" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

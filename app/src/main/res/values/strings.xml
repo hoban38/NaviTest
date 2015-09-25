@@ -1,0 +1,61 @@
+<resources>
+    <!--common string -->
+    <string name="app_name">NaviTest</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!--calendar string-->
+    <string name="accounts">Accounts</string>
+    <string name="description_add">Add Calendar</string>
+    <string name="summary">Title</string>
+    <string name="summary_hint">Enter the calendar title</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="icon_desc">Application icon</string>
+    <string name="title_separator_desc">Title separator</string>
+    <string name="refresh">Refresh</string>
+    <string name="Batch_add">Copy Calendar x3 (Batch)</string>
+    <string name="edit">Edit Calendar</string>
+    <string name="delete">Delete Calendar</string>
+    <string name="delete_title">Delete Calendar?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="error">Error</string>
+    <string name="error_format">[Error] %s</string>
+    <string name="calendarList">Google Calendar List</string>
+    <string name="title_activity_insert_event">InsertEventActivity</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_calendar_event_list">CalendarEventList</string>
+    <string name="title_activity_add_or__edit__event">Add_or_Edit_EventActivity</string>
+
+    <!--test string-->
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+
+    <!--nav-->
+    <string name="open_drawer">open drawer</string>
+    <string name="close_drawer">close drawer</string>
+
+    <!--task-->
+    <string name="task_delete_title">Delete Task?</string>
+    <string name="task_add">Copy Task x3 (Batch)</string>
+    <string name="task_edit">Edit Task</string>
+    <string name="task_delete">Delete Task</string>
+    <string name="task_Batch_add">Copy Task x3 (Batch)</string>
+    <!--event-->
+    <string name="event_delete_title">Delete Event?</string>
+    <string name="event_add">Copy Event x3 (Batch)</string>
+    <string name="event_edit">Edit Event</string>
+    <string name="event_delete">Delete Event</string>
+    <string name="event_Batch_add">Copy Event x3 (Batch)</string>
+    <string name="eventtitlehint">일정 이름</string>
+    <string name="eventnotehint">일정 내용</string>
+    <string name="start">시작</string>
+    <string name="end">종료</string>
+    <string name="attandees">참석자</string>
+</resources>

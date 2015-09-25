@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bibibig/yeon/navitest/CalendarEvent/AsyncLoadEvent.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bibibig/yeon/navitest/CalendarEvent/EventInfo.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bibibig/yeon/navitest/CalendarEvent/EventListAsyncTask.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bibibig/yeon/navitest/CalendarEvent/EventModel.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bibibig/yeon/navitest/CalendarList/AddOrEditCalendarListActivity.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bibibig/yeon/navitest/CalendarList/AsyncBatchInsertCalendarList.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bibibig/yeon/navitest/CalendarList/AsyncDeleteCalendarList.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bibibig/yeon/navitest/CalendarList/AsyncInsertCalendarList.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bibibig/yeon/navitest/CalendarList/AsyncUpdateCalendarList.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bibibig/yeon/navitest/CalendarList/CalendarInfo.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bibibig/yeon/navitest/CalendarList/CalendarListAsyncTask.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bibibig/yeon/navitest/CalendarList/CalendarModel.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bibibig/yeon/navitest/common/BasicInfo.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/bibibig/yeon/navitest/common/Utils.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/addcalendarlist.xml" charset="x-windows-949" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
